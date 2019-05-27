@@ -77,8 +77,11 @@
 #if ANY_THERMISTOR_IS(10) // 100k RS thermistor 198-961 (4.7k pullup)
   #include "thermistortable_10.h"
 #endif
-#if ANY_THERMISTOR_IS(11) // QU-BD silicone bed QWG-104F-3950 thermistor
+#if ANY_THERMISTOR_IS(11) // QU-BD silicone bed QWG-104F-3950 thermistor (4.7k pullup)
   #include "thermistortable_11.h"
+#endif
+#if ANY_THERMISTOR_IS(111) // QU-BD silicone bed QWG-104F-3950 thermistor (10k pullup)
+  #include "thermistortable_111.h"
 #endif
 #if ANY_THERMISTOR_IS(13) // Hisens thermistor B25/50 =3950 +/-1%
   #include "thermistortable_13.h"
